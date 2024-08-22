@@ -1,0 +1,213 @@
+.feature-section {
+  text-align: center;
+  padding: 80px 50px; /* Increase padding for more spacious design */
+  background:  url('../assets/image.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+  overflow: hidden; /* Ensures content doesn't overflow */
+  animation: fadeInSection 1.5s ease-out;
+}
+
+.feature-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.1); /* Subtle dark overlay */
+  z-index: 0; /* Places overlay behind the content */
+}
+
+.feature-title {
+  font-size: 3rem;
+  margin-bottom: 30px;
+  color: #222;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  position: relative;
+  z-index: 1; /* Ensures title appears above the overlay */
+  animation: slideInTitle 1s ease-out;
+}
+
+.feature-description .title {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  animation: fadeInDescription 1s ease-out;
+}
+
+.feature-description .subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #666;
+  position: relative;
+  z-index: 1;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-direction: row; /* Arrange boxes horizontally */
+  justify-content: center; /* Distribute boxes evenly */
+  align-items: flex-start; /* Ensure all boxes align at the top */
+  gap: 2rem;
+  padding: 40px 0; /* Adjust padding for balance */
+  position: relative;
+  z-index: 1;
+}
+
+.feature-box {
+  flex: 1;
+  padding: 30px;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  overflow: hidden; /* Ensures content does not overflow */
+  animation: fadeInBox 1s ease-out;
+}
+
+.feature-box::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff4444, #ec1616);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover::before {
+  transform: scaleX(1);
+}
+
+.feature-box:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.feature-image {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.feature-box:hover .feature-image {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+
+.feature-content .title {
+  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-content .subtitle {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.cta-button-container {
+  margin-top: 30px;
+}
+
+.cta-button {
+  background-color: #ec1616;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+}
+
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 300%;
+  height: 300%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0) 70%);
+  transform: translate(-50%, -50%) scale(0);
+  transition: transform 0.3s ease;
+}
+
+.cta-button:hover::before {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.cta-button:hover {
+  background-color: #d62a2a;
+  transform: translateY(-3px);
+}
+
+.cta-button .fa-download {
+  margin-right: 8px;
+}
+
+@keyframes fadeInSection {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInTitle {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInDescription {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInBox {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

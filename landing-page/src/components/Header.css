@@ -1,0 +1,101 @@
+/* src/components/Header.css */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.logo img {
+  height: 110px; /* Adjust as needed */
+}
+
+.menu-container {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  justify-content: space-between;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.menu-item {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.3rem;
+}
+
+.right-side {
+  display: flex;
+  align-items: center;
+}
+
+.search-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+
+.search-bar {
+  padding: 10px 30px 10px 20px; /* Add extra padding to the left for the icon */
+  border: 1px solid #201f1f;
+  border-radius: 10px;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  color: #1b1a1a;
+}
+
+.get-started {
+  text-decoration: none;
+  background-color: #131414;
+  color: #fff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.get-started:hover {
+      background-color: #ee1111;
+}
+
+  
+
+.separator {
+    border: none;
+    border-top: 1px solid #d42020; /* Change color as needed */
+    margin: 0;
+  }
+  @media (min-width: 768px) {
+    .header{
+      flex-direction: row; /* Arrange content horizontally */
+      padding: 50px;
+      gap: 30px; /* Increase gap for larger screens */
+    }
+  
+    .content {
+      max-width: 500px; /* Set a max width for content */
+      text-align: left; /* Align text to the left */
+    }
+  }
+  
+  /* For large screens (desktops) */
+  @media (min-width: 1200px) {
+    .header {
+      padding: 100px; /* More padding on large screens */
+      gap: 50px; /* Increase gap for large screens */
+    }
+  }
