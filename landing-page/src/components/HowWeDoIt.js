@@ -8,6 +8,7 @@ const HowWeDoIt = () => {
     <div className="how-we-do-it-container">
             <div className="how-we-do-it-r">
               <div className="feature-items">
+              <p className="title" >How We Do It</p>
                 <div className="feature-item">
                   <p className="title" ><i class="fa-solid fa-circle-down"></i>Install the Extension</p>
                   <p className="subtitle">Easily add our extension to your browser for seamless integration with your online activities.</p>

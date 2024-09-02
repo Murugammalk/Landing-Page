@@ -1,30 +1,121 @@
-.testimonials {
-    padding: 50px;
-    background-color: #fff;
+/* src/components/Testimonials.css */
+
+.testimonial-carousel {
+  padding: 50px 20px;
+  /* background-color: #f4f4f4; */
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.testimonial-carousel h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #f7f0f0;
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.testimonial-card {
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  padding: 40px 30px;
+  max-width: 600px;
+  margin: 0 15px;
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 1;
+  z-index: 1;
+}
+
+.testimonial-content {
+  position: relative;
+  z-index: 2;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 5px solid #080808;
+  object-fit: cover;
+}
+
+.testimonial-quote {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #555;
+  font-style: italic;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.testimonial-author {
+  margin-top: 20px;
+}
+
+.testimonial-author h3 {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.testimonial-author h4 {
+  font-size: 1.1rem;
+  color: #888;
+}
+
+/* Dots navigation */
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.dot {
+  height: 12px;
+  width: 12px;
+  margin: 0 5px;
+  background-color: #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.dot.active {
+  background-color: #189fee;
+}
+
+.dot:hover {
+  background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+    max-width: 90%;
+    padding: 30px 20px;
   }
-  
-  .testimonials h2 {
-    text-align: center;
-    margin-bottom: 40px;
+
+  .testimonial-image {
+    width: 60px;
+    height: 60px;
   }
-  
-  .testimonial-list {
-    display: flex;
-    justify-content: space-around;
+
+  .dot {
+    height: 10px;
+    width: 10px;
   }
-  
-  .testimonial {
-    max-width: 300px;
-    text-align: center;
-  }
-  
-  .testimonial p:first-child {
-    margin-bottom: 20px;
-    font-style: italic;
-    font-size: 18px;
-  }
-  
-  .testimonial p:last-child {
-    font-weight: bold;
-  }
-  
+}

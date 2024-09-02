@@ -1,52 +1,66 @@
+/* src/components/Pricing.css */
 .pricing-section {
-  padding: 50px;
-  background-color: #f5f5f5;
+  padding: 50px 20px;
+  /* background: #ffffff; */
+  text-align: center;
 }
 
 .pricing-title {
-  text-align: center;
-  font-size: 38px;
-  margin-bottom: 40px;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #fff8f8;
 }
 
 .pricing-plans {
   display: flex;
   justify-content: center;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .pricing-plan {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  background: linear-gradient(195deg, #ff3d3d,#242525);
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
-  text-align: start;
-  width: 300px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  color: white;
+  transition: transform 0.3s, background 0.3s;
+  text-align: justify;
 }
 
-.pricing-plan h3 {
-  font-size: 24px;
-  margin-bottom: 20px;
+.pricing-plan:hover {
+  background: linear-gradient(235deg, #d88080, #85e9ec);
+  transform: translateY(-15px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.title {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
 }
 
 .pricing-plan p {
-  font-size: 16px;
-  margin-bottom: 15px;
+  font-size: 1rem;
+  margin: 10px 0;
 }
 
 .pricing-button {
-  padding: 10px 20px;
-  background-color: #e41414;
-  color: white;
+  background-color: #cf3535;
   border: none;
-  border-radius: 4px;
+  color: #e7e1e1;
+  padding: 10px 20px;
+  border-radius: 20px;
   cursor: pointer;
-  font-size: 16px;
-  margin-top: 20px;
-  justify-content: center;
+  transition: background-color 0.3s;
+  margin-top: 140px; 
+  margin-left: 100px;
+  
 }
-
+  .pricing-free button {
+  margin-top: 240px; 
+}
 .pricing-button:hover {
-  background-color: #1e1f20;
+  background-color: #f3a19e;
+  color: #ffffff;
 }

@@ -1,8 +1,127 @@
-/* src/components/Footer.css */
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
 .footer {
-    padding: 20px 50px;
-    text-align: center;
-    background-color: #000;
-    color: #fff;
-  }
-  
+  background: linear-gradient(to right, #f9f9f9, #e0e0e0);
+  color: #000000;
+  padding: 60px 20px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+}
+
+.footer-demo {
+  margin-bottom: 50px;
+}
+
+.footer-demo h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+/* .footer-demo input {
+  width: 40%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.footer-demo button {
+  padding: 15px 30px;
+  border: none;
+  margin-left: 20px;
+  background: #f52c2c;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+} */
+
+.footer-newsletter {
+  margin-bottom: 50px;
+}
+
+.footer-newsletter h3 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.footer-newsletter input {
+  width: 30%;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.footer-newsletter button {
+  padding: 15px 30px;
+  border: none;
+  margin-left: 20px;
+  background: #f52c2c;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+}
+
+.footer-contact, .footer-nav, .footer-social {
+  margin: 20px;
+  flex: 1;
+}
+
+.footer-contact h3, .footer-nav h3, .footer-social h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.footer-contact p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.footer-nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin: 10px 0;
+}
+
+.footer-nav a {
+  text-decoration: none;
+  color: #e40000;
+  font-size: 18px;
+}
+
+.footer-social .social-icon {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: #f10d0d;
+  transition: color 0.3s;
+}
+
+.footer-social .social-icon:hover {
+  color: #352d2c;
+}
+
+.footer-bottom {
+  margin-top: 30px;
+}
+
+.footer-bottom a {
+  text-decoration: none;
+  color: #111111;
+  margin: 0 10px;
+  font-size: 14px;
+}
